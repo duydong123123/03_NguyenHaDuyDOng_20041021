@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var calcTip = (bill) => {
+        if (bill < 50 || bill > 300) {
+            return bill * 0.2;
+        } else {
+            return bill * 0.15;
+        }
+        };
+
+        var bills = [125, 555, 44];
+        var tips = [];
+        var totals = [];
+
+        for (var bill of bills) {
+            var tip = calcTip(bill);
+        tips.push(tip);
+        totals.push(bill + tip);
+        }
+
+        console.log(tips);
+        console.log(totals);
+    </script>
+</body>
+</html>

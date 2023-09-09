@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var avg = (a, b, c) => {
+            return (a+b+c)/3;
+        }
+        //data1 
+        var dolphins = avg(96, 108, 89);
+        console.log(dolphins.toFixed(2));
+
+        var koalas = avg(88, 91, 110);
+        console.log(koalas.toFixed(2));
+        //data bonus 1
+        /*
+        var dolphins = avg(97, 112, 101);
+        console.log(dolphins.toFixed(2));
+
+        var koalas = avg(109, 95, 123);
+        console.log(koalas.toFixed(2));
+        */
+       //data bonus 
+        /*
+        var dolphins = avg(97, 112, 101);
+        console.log(dolphins.toFixed(2));
+
+        var koalas = avg(109, 95, 106);
+        console.log(koalas.toFixed(2));
+        */
+        if(dolphins > koalas){
+            console.log('Team Dolphins is winner!');
+        }else if(dolphins < koalas){
+            console.log('Team Koalas is winner!');
+        }else{
+            console.log('Both team are draw!');
+        }
+    </script>
+</body>
+</html>
